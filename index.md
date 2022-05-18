@@ -23,7 +23,7 @@
 ## Second level
 * [COMP2041: Software Construction: Tools and Techniques](/2041)
 * [COMP2511: Object Oriented Design and Programming](/2511)
-* [COMP2521: ](/2521)
+* [COMP2521: Data Structures and Algorithms](/2521)
 
 ## Third level
 * [COMP3231: Operating Systems](/3231)
