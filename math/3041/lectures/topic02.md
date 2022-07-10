@@ -22,6 +22,8 @@ Famous proportionalities
 ## Geometric similarity
 Two objects have a one-to-one correspondence between points (the ratio of distances between corresponding points is constant $\forall$ possible pairs of points)
 
+![](img/topic02/similarity.png)
+
 For geometric similarity:
 
 * $\Large\frac{l}{l'}$$=$$\Large\frac{w}{w'}$$=$$\Large\frac{h}{h'}$$=$ $k, k>0$
