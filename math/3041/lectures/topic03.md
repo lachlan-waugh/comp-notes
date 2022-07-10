@@ -57,7 +57,7 @@ Fitting Real World Data
 	* $X=(A^TA)^{-1}A^TB$
 	* $E=e^Te=(B-AX)^T(B-AX)$ 
 
-<img src="/home/lachaln/.config/Typora/typora-user-images/image-20220710215017532.png" width="500"/>
+<img src="img/topic03/linear.png" width="500"/>
 
 
 
