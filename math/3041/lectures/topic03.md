@@ -8,7 +8,6 @@ Fitting Real World Data
 3. making predictions from the collected data
 
 > **1 & 2** are concerned with the ability of the model to explain observed behaviour
-> 
 > **3** is concerned with prediction of the behaviour within some range of interest
 
 

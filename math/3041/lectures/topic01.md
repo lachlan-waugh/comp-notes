@@ -2,7 +2,7 @@
 
 System: An assemblage of objects joined in some regular interaction or interdependence.
 
-&nbsp;
+
 
 ## Closed Loop modelling process
 ![](img/topic01/closed-loop.png)
@@ -20,13 +20,15 @@ Model construction is an iterative process.
 ### Simplifying/refining assumptions
 ![](img/topic01/simplifying.png)
 
-&nbsp;
+
 
 ## Model conclusions
 * **Robust**: conclusions don't depend on precise satisfaction of the assumptions.
 * **Fragile**: conclusions do depend on precise satisfaction of some conditions.
 * **sensitivity**: the degree of change in model’s conclusions as some condition they depend
 is varied; (greater change => more sensitive to that conclusion)
+
+
 
 ## The process
 1. Clarify the question, set up the problem in mathematical
@@ -35,6 +37,8 @@ terms
 3. Formulate the model in standard mathematical form
 4. Solve the mathematical problem
 5. Answer the original problem in non-technical terms
+
+
 
 ## Raindrops Keep Falling on my Head
 TODO (seminar)
