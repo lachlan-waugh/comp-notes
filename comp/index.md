@@ -2,7 +2,7 @@
 ## First level
 * [COMP1521: Computer System Fundamentals](/notes/comp/1521)
 * [COMP1531: Software Engineering Fundamentals](/notes/comp/1531)
-/notes/comp
+
 ## Second level
 * [COMP2041: Software Construction: Tools and Techniques](/notes/comp/2041)
 * [COMP2511: Object Oriented Design and Programming](/notes/comp/2511)

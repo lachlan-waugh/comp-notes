@@ -1,5 +1,5 @@
 # Computer Science
-Click [here](/math) for the science notes
+Click [here](comp) for the computer science notes
 
 # Science
-Click [here](/comp) for the computer science notes
+Click [here](math) for the science notes
