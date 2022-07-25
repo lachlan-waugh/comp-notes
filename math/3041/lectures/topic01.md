@@ -37,8 +37,3 @@ terms
 3. Formulate the model in standard mathematical form
 4. Solve the mathematical problem
 5. Answer the original problem in non-technical terms
-
-
-
-## Raindrops Keep Falling on my Head
-TODO (seminar)
