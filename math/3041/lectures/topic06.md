@@ -54,3 +54,20 @@ An equation is dimensionally homogeneous $\iff$ it can be put in the form
 
 * $f(\Pi_1, \Pi_2, ..., \Pi_n)=0$
 * $f$ is some function of $n$ arguments, $\{\Pi_1, \Pi_2, ..., \Pi_n\}$ is a complete set of dimensionless products
+
+
+
+## Summary
+
+1. Decide which variables enter the problem
+2. Determine the set of dimensionless products among the variables (dependent variables should only appear in one product)
+3. Apply Buckingham's Theorem to produce all possible dimensionally homogeous equations
+4. Solve equations for the dependent variable
+5. Test to ensure assumptions are reasonable (adjust variables accordingly)
+6. Design experiments to determine and arbitrary relationships
+
+
+
+### Example dimensions
+
+<img src="img/topic06/example-dimensions.png" alt="image-20220713024740107" style="zoom:50%;" />
