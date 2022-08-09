@@ -135,4 +135,5 @@ What if we wanted to maintain concentration above a certain level (inject $c_0$ 
 
 > $c_{\max} \approx \Large\frac{c_0}{1-e^{-kT}}$
 >
-> 
+> $c_{\min} \approx \Large\frac{c_0e^{-kT}}{1-e^{-kT}}$
+
