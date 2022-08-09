@@ -1,4 +1,3 @@
 Interacting populations
 ---
 
-## ASD

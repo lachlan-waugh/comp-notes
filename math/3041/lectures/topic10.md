@@ -1,4 +1,3 @@
 Infectious diseases
 ---
 
-## ASD
