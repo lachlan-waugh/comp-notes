@@ -19,7 +19,7 @@ Used to account for different behaviours in different parts of a system
 
 ### The balance law
 
-> $\text{Net range of change} = \text{Rate in} - \text{Rate out}$
+> $\text{Net rate of change} = \text{Rate in} - \text{Rate out}$
 
 
 
@@ -131,9 +131,49 @@ What if we wanted to maintain concentration above a certain level (inject $c_0$ 
 
 
 
-​	Maximum concentration is just after a dose, minimum is just before
+### Minimum and maximum concentration
+
+Maximum concentration is just after a dose, minimum is just before
 
 > $c_{\max} \approx \Large\frac{c_0}{1-e^{-kT}}$
 >
 > $c_{\min} \approx \Large\frac{c_0e^{-kT}}{1-e^{-kT}}$
 
+
+
+### Two compartments
+
+Medication moves from compartment A into B at rate proportionate to amount in A
+
+> $\Large\frac{dx}{dt}$$=-k_1x(t), \qquad \qquad \quad x(0)=a, k_1>0$
+>
+> $\Large\frac{dy}{dt}$$=k_1x(t)-k_2y(t), \qquad y(0)=0, k_2>0$
+
+
+
+> solve by solving the ODE for x (it's a simple exponential decay)
+>
+> * $x(t)=ae^{-k_1t}$
+>   * Inserting this into the ODE for y and rearrange
+>
+> * $\Large\frac{dy}{dt}$$+k_2y=k_1ae^{k_1t}$ 
+>   * This can be solved with an integrating factor
+>
+> * $y(t)=\Large\frac{k_1a}{k_1-k_2}$$(e^{-k_2t}-e^{-k_1t})$ 
+
+
+
+Blood-tissue interaction
+
+> $x=\begin{pmatrix}B \\ T\end{pmatrix}$, $A=\begin{pmatrix}-(m_b+k_b) & k_t\frac{V_t}{V_b} \\ k_b\frac{V_b}{V_t} & -(k_t+m_t)\end{pmatrix}$
+> 
+> $\dot x = \Large \frac{dx}{dt} $$= Ax \qquad x(t) = \alpha v_1 e^{\lambda_1 t} + \beta v_2 e^{\lambda_2 t}$
+
+where
+
+> * $m_b$: rate it's removed from blood
+> * $k_b$: rate it's absorbed into tissue
+> * $B(t)$: drug concentration in blood at time $t$
+> * $T(t)$: drug concentration in tissue at time $t$
+> * $V_b$: blood volume
+> * $V_t$: tissue volume
