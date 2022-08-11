@@ -20,24 +20,23 @@ The rate of change of a quantity is proportional to the quantity itself
 ### What is $k$
 
 > $\Large\frac{dx}{dt}$$=kx(t)$  $\rarr$   $\Large\frac{\text{\# of cells}}{\text{time}}$$=k(\text{\# of cells})$
-
+>
 > $k=\text{time}^{-1}$ (has the dimension, it is a **rate/frequency**) 
-
-
 
 
 
 ### How is $k$ determined
 
-Half life
-> $x(t_\frac{1}{2})=x(0)e^{kt_{1/2}}   \qquad   \Large\frac{1}{2}$$x(0)=x(0)e^{kt_{1/2}}$
+#### Half life
 
+> $x(t_\frac{1}{2})=x(0)e^{kt_{1/2}}   \qquad   \Large\frac{1}{2}$$x(0)=x(0)e^{kt_{1/2}}$
+>
 > $k = − \Large\frac{ln(2)}{t_\frac{1}{2}}$
 
+#### Doubling time
 
-Doubling time
 > $x (t_d)=x(0)e^{kt_{1/2}} \quad 2x(0)=x(0)e^{kt_{1/2}}$
-
+>
 > $k = − \Large\frac{ln(2)}{t_d}$
 
 
@@ -47,7 +46,7 @@ Doubling time
 If we want to calculate $k$
 
 > $\Large \frac{dN}{dt}=$$-kN(t)$
-
+>
 > $k = − \Large\frac{ln(2)}{t_\frac{1}{2}}$ or $k = − \Large\frac{1}{t_{av}}$
 
 
@@ -76,7 +75,7 @@ The probability in the next time interval $\Delta t$, that any given individual
 
 Rearranging, and taking the limit $\Delta t \rarr 0$, 
 > $\lim_{\Delta t \rarr 0} \Large\frac{N(t + \Delta t) − N(t)}{\Delta t}$$ = \lim_{\Delta t \rarr 0}(b − d )N(t)$
-
+>
 > $\Large \frac{dN}{dt}$$=(b-d)N(t) \qquad N(0)=N_0, \quad  N(t)=N_0e^{(b-d)t}$
 
 

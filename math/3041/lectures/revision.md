@@ -1,4 +1,10 @@
-If it's $\Large\frac{dx}{dt}$$=bx$,  it's an exponential ($Ae^{-rt}$) 
+### Topic02
+
+#### Exponential decay
+
+> * $y=Ce^{-bx} \quad \implies \quad  Y = ln(y) = ln(Ce^{-bx})=-bx+ln(C)$
+> 
+> * Power laws could be presented with $\lambda = -bx$
 
 
 
@@ -9,6 +15,10 @@ If it's $\Large\frac{dx}{dt}$$=bx$,  it's an exponential ($Ae^{-rt}$)
 >  $k = − \Large\frac{ln(2)}{t_d}$
 >  
 > $k = − \Large\frac{ln(2)}{t_\frac{1}{2}}$
+
+
+
+If it's $\Large\frac{dx}{dt}$$=bx$,  it's an exponential ($Ae^{-rt}$) 
 
 
 

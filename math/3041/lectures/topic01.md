@@ -5,7 +5,7 @@ System: An assemblage of objects joined in some regular interaction or interdepe
 
 
 ## Closed Loop modelling process
-![](img/topic01/closed-loop.png)
+<img src="img/topic01/closed-loop.png" style="zoom:50%;" />
 
 Model construction is an iterative process.
 1. examine system: identify behaviours we wish to predict/explain.
@@ -14,11 +14,13 @@ Model construction is an iterative process.
     * Assuming simple relationships (e.g. linearity) in any submodel or restricting the problem under investigation.
 3. Generate a model.
 
-### It's an iterative process
-![](img/topic01/closed-loop-2.png)
 
-### Simplifying/refining assumptions
-![](img/topic01/simplifying.png)
+
+### It's an iterative process
+<img src="img/topic01/closed-loop-2.png" style="zoom: 40%;" />
+
+#### Simplifying/refining assumptions
+<img src="img/topic01/simplifying.png" style="zoom: 40%;" />
 
 
 

@@ -38,6 +38,8 @@ Fitting Real World Data
 > 
 > *Correlation coefficient*: $r=$ $\Large\frac{\sum_{i=1}^{N}(x_i-\bar x)(y_i-\bar y)}{\sum_{i=1}^{N}(x_i-\bar x)^2\sum_{i=1}^{N}(y_i-\bar y)^2}$
 
+
+
 ### Errors
 
 > $Y_i = mx_i + b$
@@ -72,6 +74,8 @@ Fitting Real World Data
 > $y=ae^{kx}$ could be represented as:
 >
 > $Y=kx+b, \qquad Y=ln(y), \quad b=ln(a)$
+
+
 
 ### Power relationship
 
