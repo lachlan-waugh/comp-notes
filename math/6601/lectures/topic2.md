@@ -1,1 +1,1 @@
-## the biotic environment
+## climate and vegetation
