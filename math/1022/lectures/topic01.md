@@ -59,7 +59,7 @@
 #### Heroin
 
 * Charles Wright
-* Boiled morphine and acetic acid, which introduced an acetyl group into compound
+* Boiled morphine & acetic acid, which introduced an acetyl group into compound
 
 
 
@@ -76,3 +76,30 @@
 ### Cocaine
 
 * Alkaloid (like nicotine and opiate)
+
+
+
+### Amphetamine
+
+* Derived from the plant Ephedra
+* First synthesized by Lazar Edeleanu when trying to derive synthetic ephedrine
+
+
+
+### Methamphetamine
+
+
+
+## Other drugs
+
+### MDMA (3-4 methylenedioxy-N-methylamphetmaine)
+
+* Often classed as amphetamine, but also a hallucinogen (hence other)
+* Primary precursor was safrole
+* Some studies show it can be helpful in treating PTSD
+
+
+
+### Cannabis
+
+* Two varieties, sativa and indica which have high and low psychotomimetic effects, respectively.
