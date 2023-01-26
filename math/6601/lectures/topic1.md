@@ -57,6 +57,17 @@ Located at 33°51'54'' S, 151°12'34'' in the South-Eastern hemisphere
 
 
 
+#### sydney basin
+
+* 400km long (north -> south)
+* 50 - 120km wide (east -> west)
+* bounded by old mountain systems (fold belts)
+* formed in early permian (~300Ma), mostly filled wi
+
+
+
+
+
 ## climate and vegetation
 
 Sydney basin is a physiographic region, a biogeographic region
