@@ -4,7 +4,7 @@ Located at 33°51'54'' S, 151°12'34'' in the South-Eastern hemisphere
 
 
 
-### overview
+#### overview
 
 * relatively isolated, large and flat
 * geologically old and stable
@@ -13,7 +13,7 @@ Located at 33°51'54'' S, 151°12'34'' in the South-Eastern hemisphere
 
 
 
-#### this has caused
+this has caused
 
 * high biological diversity
 * high endemicity (species only occuring in Australia)
@@ -23,48 +23,41 @@ Located at 33°51'54'' S, 151°12'34'' in the South-Eastern hemisphere
 
 
 
-#### elevation and relief
+elevation and relief
 
 * large, but sparsely populated
-* the flatest continent
+* the flattest continent
 * lowest average elevation (330m), lowest elevation, and absolute relief
-* eastern seaboard is flanked by the great escaprpment and the great dividing range
+* eastern seaboard is flanked by the great escarpment and the great dividing range
 
 
 
-#### major landform features: mountains plateaux, and plains
+four main units
 
-* west: blue mountains, north hornsby plateau, south woronora plateau. central cumberland plain (incorrectly sydney basin)
-* sydney basin refers to the larger geological feature, not the smaller central sydney
-
-
-
-### rivers
-
-* great dividing range separates eastwards flowing rivers from westward flowing ones
-* no major river runs through sydney, hawkesbury nepean runs around it
+* Wianamatta group
+  * Ashfield shale (older)
+  * Bringelly shale (younger)
+* Hawkesbury sandstone
+  * soils very thin/low in nutrients
+* Narrabeen group
+* Permian coal measures
 
 
 
-#### hawkesbury-napean
-
-* indigenous name = Deerubbin
-* catchment area >20000km^2
-* source of sydneys water supply
-* headwaters to south and west of sydney
-* downstream is hawkesbury, upstream is napean
-* Discovered by two different people, didn't realise it was the same river
+* lacking in fossils
+* geology dominated by sedimentary undeformed rocks
 
 
 
-#### sydney basin
+landscape features controlled by geology
 
-* 400km long (north -> south)
-* 50 - 120km wide (east -> west)
-* bounded by old mountain systems (fold belts)
-* formed in early permian (~300Ma), mostly filled wi
-
-
+* rock types and structures
+* weathering and erosion
+* local climate patterns
+* building resources
+* limits of areas of occupation
+* soils and fertility
+* 
 
 
 
@@ -76,7 +69,7 @@ Sydney basin is a physiographic region, a biogeographic region
 
 #### australian climate
 
-strongly controlled by large scale phenomena:
+strongly controlled by:
 
 * subtropical high pressure belt
 * equatorial low pressure belt
@@ -85,27 +78,76 @@ strongly controlled by large scale phenomena:
 
 
 
-also characterised by variability
+sea-breeze/land-breeze cycle
 
-* walker circulation
-* southern annual mode
-* indian ocean dipole
+east coast lows
+
+Cba/cfa classification
+
+uniform rainfall (1400 -> 700)
+
+30 thunderstorms per year
+
+prone to heat waves/drought
 
 
 
-#### drivers of the sydney climate
+moist forests (sheltered hillsides/gullies)
 
-* hadley cell
+dry woodlands (plateaux/ridges)
+
+Dominated by Eucalyptus/Corymbia
 
 
 
-* atmospheric circulation over australia, a high pressure system,
-  * 800km per day
-  * average periodicity of 6.9 days
-  * shift 5-10\* towards equator
-  * stronger in winter
+six major vegetation communities
+
+* sandstone: ridgetop woodland, gully forest, heaths
+* shale: blue gum high forest, turpentine ironbark forest, cumberland plain woodland
+
+
+
+major controls are geology (soils/nutrients) and rainfall
+
+humans especially impacted shale-based communities
 
 
 
 ## coast and beaches
 
+originally part of super-continent Gondwana, started to separate away 160 million years ago
+
+
+
+Moved up to 7mm a year
+
+
+
+Hawkesbury sandstone dominates coastline, responsible for drowned river valleys (estuaries), embayed beached, transport issues
+
+70% of sydney is considered rocky
+
+
+
+estuary: semi-enclosed body of water influenced by both fresh and salt water
+
+* sydney harbour, broken bay, port hacking
+
+
+
+ICOLLS - intermittently closed nad open lakes and lagoons (dee why and narraben)
+
+
+
+south 1/2: microtidal wave-dominated (bigger waves, smaller tides)
+
+north 1/2: tide modified/dominated with reefs (smaller waves, bigger tides)
+
+
+
+* dissipative
+* longshore bar trough
+* rhythmic bar and beach
+* transverse bar and rip
+* low tide terrace
+* reflective

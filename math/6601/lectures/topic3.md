@@ -84,3 +84,56 @@
 
 
 doodoo man (horned beast)
+
+
+
+## ASD
+
+oxford street followed a path used by local Aboriginal people (Maroo)
+
+
+
+factors leading to multiculturalism
+
+* cold war
+* vietnam war
+* racial discrimination act 1975
+* shift in global attitudes to immigration
+
+
+
+green bans
+
+* defend open spaces from development
+* protect existing housing stock from demoloition (for freeways/highrise)
+* preserve older-style buildings from replacement
+
+
+
+hard power: exercise of influence through coercion
+
+soft power: attraction/persuasion to change minds and influence behaviour
+
+
+
+## environmental damge
+
+### coastal management options
+
+* no action
+* retreat and relocation
+* soft solutions (natural)
+* hard solutions (construction)
+* C and D are shoreline coastal engineering
+
+
+
+air pollution
+
+* inversion layer: cool air trapped under warm air
+* leads to stagnant air mass
+* assisted by topography/sea breezes
+
+vehicles are the most pervasive source of diffuse air pollution (largest impact)]
+
+bushfires burn 40,000 hectares of forest/grassland each year
