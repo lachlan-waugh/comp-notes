@@ -1,8 +1,8 @@
 # File systems
 * [FAT32](#fat32)
 * [NTFS](#ntfs)
-* [File slack](#file)
-* [The Sleuth Kit]()
+* [File slack](#file-slack)
+* [The Sleuth Kit](#the-sleuthkit-tsk)
 
 &nbsp;
 
