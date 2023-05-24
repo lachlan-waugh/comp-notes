@@ -32,9 +32,10 @@ hdparm --dco-identify /dev/sda
 
 &nbsp;
 
-### verifying sector count: after acquisition, check image's sector count matches physical devices 
-- mismatch could indicate HPA, DCO or a mistake in the imaging process 
-- check the imager, manufacturer manuals, and labels 
+### verifying sector count
+* after acquisition, check image's sector count matches physical devices 
+* mismatch could indicate HPA, DCO or a mistake in the imaging process 
+* check the imager, manufacturer manuals, and labels 
 
 &nbsp;
 
@@ -81,7 +82,7 @@ hdparm --dco-identify /dev/sda
 
 &nbsp;
 
-### unpartitioned space: 
+### unpartitioned space
 
 <img src="./img/week02/image5.png" style="zoom: 50%;" />
 

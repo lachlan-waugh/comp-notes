@@ -28,6 +28,7 @@
 &nbsp;
 
 ## Morals and ethics
+
 | ethics | moral principles that govern a person's behaviour or the conducting of an activity  |
 | ---------- | ------------------------------------------------------------ |
 | morals | standards of behaviour, principles of right/wrong. Emphasis on widely shared norms.  |
