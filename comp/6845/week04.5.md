@@ -21,14 +21,14 @@
 * File signature*: "magic" bytes at the start indicating what type of file it is 
 * You can't just rely on the file extension, as this can be easily modified
 
-
+&nbsp;
 
 #### Processing with tools
 
 - **TSK**: sorter command runs analysis of file types, creating a listing of files in multiple categories. Also detects type smismatches during the  process. 
 - **Autopsy**: Extension mismatch detector module, however this can be very slow 
 
- 
+&nbsp;
 
 #### Hash sets
 * comparing files to a database of known hashes 
