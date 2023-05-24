@@ -52,7 +52,9 @@ hdparm --dco-identify /dev/sda
 
 ### master boot record
 * the first sector on a drive (LBAO)
-* First section contains bootstrap code. If drive is bootable, contains code to transfer control to this.
+* First section contains bootstrap code.
+  * If drive bootable: contains code to transfer control to this.
+
 * Next 64 bytes contain partition table (max 4 entries) 
 
 <img src="./img/week02/image3.png" style="zoom: 67%;" />
