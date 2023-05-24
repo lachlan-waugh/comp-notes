@@ -1,55 +1,53 @@
-## File systems
-
-* [FAT32]()
-* [NTFS]()
-* [File slack]()
+# File systems
+* [FAT32](#fat32)
+* [NTFS](#ntfs)
+* [File slack](#file)
 * [The Sleuth Kit]()
 
+&nbsp;
 
+## what is a filesystems
+* way in which OS manages files/folder structure on disk 
+* another logical layer of abstraction on top of volumes 
+* manage allocation of clusters to files, and usage of clusters (free/allocated) 
 
-**filesystems**: way in which OS manages files/folder structure on disk 
+&nbsp;
 
-- another logical layer of abstraction on top of volumes 
-- manage allocation of clusters to files, and usage of clusters (free/allocated) 
-
-
-
-### FAT32
-
+## FAT32
 * 3 main components: volume boot record, file allocation table (FAT), directory entries 
 * logical improvement on FAT8/16 (number of bytes ...)
 
+&nbsp;
 
-
-**volume boot record**: sits at the beginning of the drive. contains:
-
+### volume boot record
+* sits at the beginning of the drive. contains:
 * a jump to the boot code,
 * OEM name,
 * boot code and
 * error messages BPB (BIOS Parameter Block) database of values to setup the FAT
 
+&nbsp;
 
-
-**BIOS parameter block (BPB):** describes the physical layout of a data storage volume, contains:
-
+### BIOS parameter block (BPB)
+* describes the physical layout of a data storage volume, contains:
 * File system geometry (bytes per sector, sectors per cluster)
-
 * FATs stored, root directory location, volume and type labels in ASCII
 
 >  Very distinctive look in HEX/Text, easy to see 
 
- 
+&nbsp;
 
-**directory entries (DEs)**: file information in FAT systems are organized into DE structures. 
-
+### directory entries (DEs)
+* file information in FAT systems are organized into DE structures. 
 * A pretty simple tree structure 
 * each DE consists of file metadata (pointers to clusters containing data for file/folder) 
   * **files**: cluster contains content of file
   * **folder**: cluster contains another DE
 
+&nbsp;
 
-
-**file allocation table**: big linked list containing status of all clusters in the FS
+### file allocation table
+> big linked list containing status of all clusters in the FS
 
 | status       | indicates                                       |
 | ------------ | ----------------------------------------------- |
@@ -57,20 +55,18 @@
 | `0x?0000002` | cluster in use (value is next cluster for file) |
 | `0x?FFFFFFF` | cluster in use EOF marker                       |
 
- 
+&nbsp;
 
-**deleting files**
-
+### deleting files
 * first character in filename modified to `0xe5` (usually `_` or `!` in tools)
 * all clusters in FAT replaced with `0x00` to set them as free
 * hard to recover if file was split across the FAT
 
+&nbsp;
 
-
-### NTFS
+## NTFS
 
 * everything is a file (even meta-data structures)
-
 * new features: sparse file support, disk use quotas, resparse points, distributed link tracking, file-level encryption
 
 | **NTFS VBR**               | Similar to FAT VBR, but also contains a cluster with \$MFT (master file table) and a cluster with backup \$MFT (\$MFTMirr) |
@@ -95,27 +91,26 @@
 |                            | nothing is wiped/deleted from MFT or clusters                |
 |                            | therefore: until the FILE entry is overwritten, the data is still there |
 
- 
+&nbsp;
 
-**file slack**: occurs because data can only be allocated to files at cluster level 
+### file slack
+* occurs because data can only be allocated to files at cluster level 
+* in Windows, RAM slack is padded with 0s while drive slack is left untouched 
 
 | drive slack | if file doesn't fill entire cluster, remaining slack can contain residual data |
 | ----------- | ------------------------------------------------------------ |
 | RAM slack   | you can't address part of a sector, so there's slack at the end of the sector |
 
-> in Windows, RAM slack is padded with 0s while drive slack is left untouched 
+&nbsp;
 
- 
-
-### unallocated clusters
-
+## unallocated clusters
 * file carving is scanning unallocated clusters for traces of deleted files
-
 * does this by looking for File Signatures (tell-tale byte structures)
 
+&nbsp;
 
-
-**the sleuthkit (TSK)**: Autopsy is just a GUI for TSK
+## the sleuthkit (TSK)
+> Autopsy is just a GUI for TSK
 
 | **img_stat** | shows basic information about the image (type, hash, etc). A good starting point |
 | ------------ | ------------------------------------------------------------ |
@@ -124,9 +119,9 @@
 | **istat**    | shows FAT/MFT entry for a file (quite similar to ffstat), also requires -o offset files are identified by inode number. lists out the cluster runs of a file |
 | **icat**     | similar to cat, shows the data for a file. also requires -o offset files identified by an inode number |
 
- 
+&nbsp;
 
-#### More commands
+### More commands
 
 | **command**      | description                                                  |
 | ---------------- | ------------------------------------------------------------ |
