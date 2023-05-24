@@ -3,7 +3,7 @@
 * [week02.5: physical layer, data carving, acquisition and cloud](./week02)
 * [week03: file systems](./week03)
 * [week04: presenting your work](./week04)
-* [week04: processing and timeline Analysis](./week04.5)
+* [week04.5: processing and timeline Analysis](./week04.5)
 * [week05: ](./week05)
 * [week06: ](./week06)
 * [week07: ](./week07)

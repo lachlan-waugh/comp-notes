@@ -1,25 +1,20 @@
-## Presenting your work
+# Presenting your work
 
-### investigative process 
-
+## investigative process 
 * technical findings
-
 * using experience to follow the evidence
-
 * continuously reporting back to client
 
+&nbsp;
 
-
-### Legal instructions
-
+## Legal instructions
 * given by legal team
 * expert witnesses must be independent/unbiased, instructions don't change this
 * you answer questions pertinent to the matter, asked by the legal team
 
+&nbsp;
 
-
-### The report
-
+## The report
 * The report should be a story, paint a picture and position your role 
 * Instructions aren't always necessarily biased (give opinion if any for example) 
 * You don't necessarily need to give an opinion, you can say you don't have one 
