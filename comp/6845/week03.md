@@ -65,31 +65,66 @@
 &nbsp;
 
 ## NTFS
-
 * everything is a file (even meta-data structures)
 * new features: sparse file support, disk use quotas, resparse points, distributed link tracking, file-level encryption
 
-| **NTFS VBR**               | Similar to FAT VBR, but also contains a cluster with \$MFT (master file table) and a cluster with backup \$MFT (\$MFTMirr) |
-| -------------------------- | ------------------------------------------------------------ |
-| **$MFT**                   | Equivalent of DE in FAT.                                     |
-|                            | Entries contains metadata about files, and their location of the data |
-|                            | MFT Entry Bitmap: an attribute that tracks which MFT FILE entries are in-use/free |
-| **$BITMAP**                | The equivalent of the FAT (much more efficient, tracks clusters with a single bit) |
-|                            | Tracks usage of clusters in the filesystem, but not the next cluster in file |
-| **FILE Records**           | Each file has its own within the $MFT (incl. \$MFT), contains a MFT header, file metadata attributes: |
-|                            | \$STANDARD_INFORMATION - creation, modification, changed, access time |
-|                            | \$FILENAME                                                   |
-|                            | \$DATA - content of the file                                 |
-| **resident data**          | attribute data initially starts resident (all contained within the $MFT), but moved into clusters if it becomes too large if file become non-resident, *it doesn't get zeroed out* once an attribute becomes non-resident, it never becomes resident again |
-| **cluster runs**           | \$Data attributes store location of file using cluster runs  |
-|                            | header: single byte describing number of bytes used for this attribute |
-|                            | length: number of contiguous clusters in this run            |
-|                            | offset: offset from starting point of previous run (0 if this is first run) |
-| **alternate data streams** | can add a secondary data stream with `file1:file2`<br />generally, windows doesn't honour this, use notepad `file1:file2` or `dir /r` |
-| **deleted files**          | MFT marks FILE entry as available                            |
-|                            | \$DATA attribute read, \$BITMAP updated to show cluster runs no longer used |
-|                            | nothing is wiped/deleted from MFT or clusters                |
-|                            | therefore: until the FILE entry is overwritten, the data is still there |
+&nbsp;
+
+### NTFS VBR
+* Similar to FAT VBR, but also contains
+	* a cluster with `$MFT` (master file table)
+	* a cluster with backup of `$MFT` (`$MFTMirr`)
+
+&nbsp;
+
+### $MFT
+* Equivalent of DE in FAT.
+* Entries contains metadata about files, and their location of the data
+* **MFT Entry Bitmap**: an attribute that tracks which MFT FILE entries are in-use/free
+
+&nbsp;
+
+### $BITMAP
+* The equivalent of the FAT (much more efficient, tracks clusters with a single bit)
+* Tracks usage of clusters in the filesystem, but not the next cluster in file
+
+&nbsp;
+
+### FILE Records
+* Each file has its own within the `$MFT` (incl. `$MFT`), contains a MFT header, file metadata attributes:
+	* `$STANDARD_INFORMATION` - creation, modification, changed, access time
+	* `$FILENAME`
+	* `$DATA` - content of the file
+
+&nbsp;
+
+### resident data
+* attribute data initially starts resident (all contained within the $MFT)
+* moved into clusters if it becomes too large if file become non-resident *it doesn't get zeroed out*
+* once an attribute becomes non-resident, it never becomes resident again
+
+&nbsp;
+
+### cluster runs
+`$Data` attributes store location of file using cluster runs
+
+* **header**: single byte describing number of bytes used for this attribute
+* **length**: number of contiguous clusters in this run
+* **offset**: offset from starting point of previous run (`0` if this is first run)
+
+&nbsp;
+
+### alternate data streams
+* can add a secondary data stream with `file1:file2`
+* generally, windows doesn't honour this, use notepad `file1:file2` or `dir /r`
+
+&nbsp;
+
+### deleted files
+* `$MFT` marks `$FILE` entry as available
+* `$DATA` attribute read, `$BITMAP` updated to show cluster runs no longer used
+* nothing is wiped/deleted from `$MFT` or clusters
+> until the FILE entry is overwritten, the data is still there
 
 &nbsp;
 
@@ -112,8 +147,9 @@
 ## the sleuthkit (TSK)
 > Autopsy is just a GUI for TSK
 
-| **img_stat** | shows basic information about the image (type, hash, etc). A good starting point |
+| command | description |
 | ------------ | ------------------------------------------------------------ |
+| **img_stat** | shows basic information about the image (type, hash, etc). A good starting point |
 | **mmls**     | decodes partition table (shows partit. types, starting/ending clusters, size) the partition offsets are useful for later commands |
 | **fsstat**   | shows partition details of particular offset (type, geometry, MFT/FAT locations) one place to use the above offset using the -o switch |
 | **istat**    | shows FAT/MFT entry for a file (quite similar to ffstat), also requires -o offset files are identified by inode number. lists out the cluster runs of a file |
