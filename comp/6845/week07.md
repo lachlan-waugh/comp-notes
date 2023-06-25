@@ -5,7 +5,7 @@
 - Particularly in the case of remote access, it must continue to run (to receive commands) 
 - It's therefore a critical gateway for attacking success, and a good place to look 
 
- 
+&nbsp;
 
 ### What's in memory 
 
@@ -16,7 +16,7 @@
 - Passwords, keys, security information 
 - Clear text fragments 
 
- 
+&nbsp;
 
 ### Memory (RAM)
 
@@ -25,14 +25,15 @@
 - Create a plan of action before attending site/commencing response (consider if memory needed) 
 - There are alternate sources of memory on cold machine image, but not reliable 
 
- 
+&nbsp;
 
-**Physical and virtual memory** 
+### Physical and virtual memory 
 
 - vmem provides a consistent view of memory, regardless of # of processes running 
 - Non-resident memory is stored in the pagefile 
 
- 
+&nbsp;
+&nbsp;
 
 ## Other sources of memory 
 
@@ -43,7 +44,7 @@
 - This dump is stored in hiberfil.sys (not deleted when machine restored to running state) 
 - (stored in proprietary format, tools can convert to raw format for other applications) 
 
- 
+&nbsp;
 
 ### Page file (swap file)
 
@@ -53,14 +54,14 @@
 - A collection of the gaps in physical memory 
 - Can't parse like regular memory dump, can contain important info (e.g. fragments) 
 
- 
+&nbsp;
 
 ### Virtualization 
 
 - Many provide mechanism to obtain copy of memory without running program on host 
 - e.g. VMWare machine suspended -> raw memory written to disk in .vmem file 
 
- 
+&nbsp;
 
 ### Acquiring memory
 
@@ -69,7 +70,8 @@
 - Therefore, you need to document, it's impossible not to change, but explain that/how you did 
 - Follow a stringent methodology to ensure you don't modify it too much 
 
- 
+&nbsp;
+&nbsp;
 
 ### tools 
 
@@ -80,7 +82,7 @@
 | dd/windd          | TODO  |
 | powershell        | TODO  |
 
- 
+&nbsp;
 
 ### considerations 
 
@@ -88,14 +90,15 @@
 - Taking full disk image after memory, don't run forensic tools/store image on that drive 
 - Ensure memory storage device (e.g. USB) has more space than RAM (it isn't compressed) 
 
- 
+&nbsp;
 
-**FTK Imager Lite (GUI-based tool)** 
+### FTK Imager Lite (GUI-based tool) 
 
 - Creates standard raw dd style images that can be used in most analysis tools 
 - Suitable for most cases, but not the smallest footprint 
 
- 
+&nbsp;
+&nbsp;
 
 ## Redline 
 
@@ -106,7 +109,7 @@
 - More replicable, so easy to prove how you obtained any evidence found 
 - Can do a lot more than just acquire memory 
 
- 
+&nbsp;
 
 ### Analysis approach
 
@@ -121,7 +124,7 @@
 | Signs Of  Rootkits           | Look for signs  of Rootkit hiding  techniques.               |
 | Export for  Further Analysis | Export out any  processes or DLL that were identified during  the previous  steps for in-depth malware  analysis. |
 
-
+&nbsp;
 
 ### processes in memory
 
@@ -133,7 +136,8 @@
 - Malware/rootkit authors manually unlike process (Direct Kernel Object Manipulation) 
   - Therefore you can search for unlinked processes 
 
- 
+&nbsp;
+&nbsp;
 
 ## looking for suspicious stuff 
 
@@ -148,7 +152,7 @@
 - System processes running under a user account (check the SID) 
 - Cheat sheet [here](https://digital-forensics.sans.org/media/poster_2014_find_evil.pdf)
 
- 
+&nbsp;
 
 ### memory objects
 
@@ -160,7 +164,7 @@
 - Indicators of compromise: redline can load IOCs to assist in analysis process. (e.g. artefacts)
 - Frequency of least occurrence: highly likely that MOs referenced by malware will  be referenced far less than normal system objects. Count the amount of  references to MOs
 
-
+&nbsp;
 
 ### network activity 
 
@@ -171,7 +175,8 @@
 - external IP addresses
 - internal IP
 
- 
+&nbsp;
+&nbsp;
 
 ## volatility 
 

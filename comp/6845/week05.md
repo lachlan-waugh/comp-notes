@@ -9,7 +9,7 @@
 * finding what was stolen
 * finding patient zero
 
-
+&nbsp;
 
 ### Barriers
 
@@ -17,37 +17,41 @@
 * data size + retention
 * Where to perform the capture
 
+&nbsp;
 
 
 ### Output
 
 * pcap (packet capture, or libpcap) API capturing live packets from OSI 2-7 pcapng is pcap next generation (contains a bit more information)
 
- 
+&nbsp;
+
+&nbsp; 
 
 ### WireShark
 
 > A packet sniffer/analysis tool. Captures traffic on LAN and stores for analysis Can have billions of queries, need to use filters to limit amount of data
 
-
+&nbsp;
 
 ### Virus total
 
 > Can be useful to find malicious IPs ([found here](https://www.virustotal.com/gui/))
 
- 
+&nbsp;
 
 ### MAC address
 
 > Media Access Control: a unique ID assigned to NIC for use within network segment Can be spoofed, not definitive proof User agent of packet can say the OS
 
-
+&nbsp;
 
 ### Cloud
 
 > Cloud logging adds a rich source of data (VPC flow logs, network telemetry, network watcher) 
 
-
+&nbsp;
+&nbsp;
 
 ### Registry Hives
 
@@ -61,14 +65,14 @@
 | SECURITY   | The kernel will access it to read and enforce the security policy applicable to the  current user and all applications or operations executed by this user.  The is also a per user hive |
 | NTUSER.dat | A per-user hive                                              |
 
-
+&nbsp;
 
 ### Hive locations 
 
 - NTUSER.dat is stored in C:\Users\<username>\NTUSER.dat 
 - The other hives are in C:\Windows\System32\config\<hivename> 
 
-
+&nbsp;
 
 ### OS version
 
@@ -77,7 +81,7 @@
 - if OS installed recently, could indicate it was wiped 
 - Keys of note: Product name, Registered Organisation, Registered Owner, System Root, Install Date (UNIX) 
 
-
+&nbsp;
 
 ### Control set
 
@@ -85,7 +89,7 @@
 
 - Says which configuration that the computer is running under 
 
-
+&nbsp;
 
 ### Timezones
 
@@ -94,7 +98,7 @@
 - Keys of note: TimeZoneKeyName, Bias, DaylightBias, ActiveTimeBias 
 - Time information is also stored in BIOS time (helps account for BIOS time skew)
 
-
+&nbsp;
 
 ### Computer name
 
@@ -104,7 +108,7 @@
 
 - TCP/IP key contains network information which may help determine what network settings were in use at the time of imaging. 
 
- 
+&nbsp;
 
 ### User accounts
 
@@ -112,7 +116,8 @@
 
 * SAM isn't accessible to users normally 
 
-
+&nbsp;
+&nbsp;
 
 ### SAM stores F and V keys 
 
@@ -132,13 +137,14 @@
 |        |                             | `0x30` | NTLM hash offset      |
 |        |                             | `0x34` | NTLM hash length      |
 
-
+&nbsp;
+&nbsp;
 
 ## Evidence of USB usage 
 
 > Where to look
 
-
+&nbsp;
 
 ### USBStor
 
@@ -147,7 +153,7 @@
 - All devices plugged into system 
 - shows connect time, model, serial, and mount points 
 
- 
+&nbsp;
 
 ### Plug and play log
 
@@ -158,7 +164,7 @@
 - Searching USB serial number in USBSTOR will locate its installation log 
 - Shows when device was first attached 
 
-
+&nbsp;
 
 ### MountedDevices
 
@@ -167,7 +173,7 @@
 - Mapping between USB Device/Logoical Volume GUIDs, or USB Device/DOS Drive letters 
 - We can see what drive letter the USB device was assigned to 
 
- 
+&nbsp;
 
 ### MountPoints2
 
@@ -175,7 +181,7 @@
 
 - See which user loaded the device 
 
- 
+&nbsp;
 
 ### Link files
 
@@ -193,7 +199,7 @@
 
   > C:\Users\<user>\AppData\Roaming\Microsoft\Windows\Recent 
 
-
+&nbsp;
 
 ### Evidence of execution 
 
@@ -201,7 +207,7 @@
 
 - Contains name of exe, unicode list of DLLs, # of runs, timestamp of last run 
 
- 
+&nbsp;
 
 ### UserAsst
 > NTUSER.DAT\Software\Microsoft\Windows\CurrentVersion\Explorer\UserAssist\{GUID}\Count 
