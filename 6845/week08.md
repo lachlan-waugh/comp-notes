@@ -15,6 +15,7 @@
 
 ### Challenges of having many phones
 > most times you won't just be given one phone
+
 * Typically you'll have multiple types of phones (not always in corporate e-discovery) 
 * Data consistency (data elements, meaning of messages, time formats)
 * Working out why something is missing, or doesn't match 
