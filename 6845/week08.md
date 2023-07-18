@@ -9,7 +9,7 @@
 &nbsp;
 
 ### Types of phones 
-![](./img/week02/mobiles.png)
+![](./img/week08/mobiles.png)
 
 &nbsp;
 
