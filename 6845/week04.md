@@ -94,3 +94,43 @@ hfind database.hash 9255CAC249D53925253457E7E2B34116  2326-chrome.7z
 * `$Filename` timestamps are much more difficult to manipulate directly, comparisons between `$F$` and `$S_I` can reveal traces of timestomping.
 
 > Timestomping: attempt to hide tracks by changing timestamps of files in the MFT
+
+&nbsp;
+&nbsp;
+
+# Time and Telco Data
+## Challenges of and interpreting time 
+* When time is used to contextualise events, interpreting correct time is essential 
+* Time is the anchor data for sequencing events, however also causes much confusion 
+
+&nbsp;
+
+## Time synch:
+> official AUS time source provided by National Measurement Institute NTP servers 
+* Servers in Adelaide, Brisbane, Melbourne, Perth and Sydney 
+* Most commonly, people use Google and Pool 
+
+&nbsp;
+
+## Problems 
+* Windows/Mac devices stores dates in different formats, which can cause large discrepancies 
+* Determine between dd-mm-yyyy and mm-dd-yyyy (ask for a month's worth of data) 
+* Daylight saving time (AEST vs AEDT) 
+* Multiple people adjusting for time-zones (first, then second, etc) 
+* The same source which has timestamps in different formats 
+* 1904 and 1900 serials. 
+* For a long event, what is the timestamp (start or end)? 
+
+> Proving an email has been received is not the same as proving it has been read
+
+ &nbsp;
+
+Coordinated Universal Time (shortened to UTC as a compromise to the French speakers) is a standard adopted in 1967 for calculating date and time based on the International Atomic Clock and is maintained by the Bureau Intemational des Poids et Mesures (BIPM) in France. It includes ways of representing date and time which have since also been standardised as ISO 8016. UTC is not adjusted for daylight savings.
+
+&nbsp;
+
+Greenwich Mean Time (or GMT) is a time zone that is at the Greenwich meridian, which is also the zero meridian. Zulu (or Z) refers to the timezone at the zero meridian and for practical purposes is equivalent to GMT. Local times are shown are For example, a timestamp affixed in Sydney will show as +10:00 meaning 10 hours ahead of Zulu/GMT (or +11 in daylight savings).
+
+&nbsp;
+
+The difference between UTC and GMT varies according to the year but is always < 1 second. "Leap seconds" are inserted into UTC to keep UTC and GMT is synch with the next one being inserted on 31 December 2021. Many timestamps use UTC, GMT and Z interchangeably. For the purposes of my report I will use GMT (pick one and stick to it).
