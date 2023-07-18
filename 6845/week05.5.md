@@ -1,2 +1,0 @@
-# Encryption and anti-forensics
-
